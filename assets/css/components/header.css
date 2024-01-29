@@ -1,0 +1,141 @@
+/********************** BANNER PROMO ***************************/
+.banner-promo-container{
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+}
+.banner-promo{
+    line-height: 40px;
+    font-size:1.3rem;
+}
+.banner-promo span{
+    border: 1px solid var(--main-color-white);
+    padding:5px;
+    cursor: pointer;
+}
+
+/********************** NAV TOP ***************************/
+.nav-top-container{
+    border-bottom: 1px solid #ccc;
+}
+.nav-top{
+    color: var(--main-color-gray);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.nav-top .nav-message{
+    text-transform: uppercase;
+}
+.nav-top ul li a:hover{
+    color: var(--main-color);
+}
+
+/********************** WEBSITE DETAILS ***************************/
+
+.website-details{
+    border-bottom: 0.1px solid gray;
+}
+.fa-bars{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.website-logo{
+    min-width: 250px;
+}
+.website-search-bar{
+    height: 50px;
+}
+.website-search-bar input{
+    background-color: #efefef;
+    border-radius: 50px 0 0 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-right: 1px solid var(--main-color-white);
+    outline: none;
+}
+.website-search-bar select{
+    background-color: #efefef;
+    font-size: 1.2rem;
+    border: none;
+    border-right: 1px solid var(--main-color-white);
+    border-left: 1px solid var(--main-color-white);
+    outline: none;
+    
+}
+.website-details .serach-icon{
+    background-color: #efefef;
+    border-left: 1px solid var(--main-color-white);
+    border-radius: 0 50px 50px 0;
+    width: 50px;
+
+}
+.website-details .website-call-us{
+    height: 50px;
+}
+.website-details .website-call-us .call-message h3{
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--main-color-gray);
+}
+.website-details .website-call-us .call-message a{
+    font-weight: bold;
+}
+.call-icon i, .website-icon i{
+    font-size: 2rem;
+}
+    /********************** BANNER PROMO ***************************/
+    /********************** BANNER PROMO ***************************/
+/********************** MEDIA  ***************************/
+@media screen and (max-width: 1200px) {
+    .nav-items{
+        display: none;
+    }
+    .website-logo{
+        min-width: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .website-search-bar{
+        display: none;
+    }
+    .website-details{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-message{
+        font-size: 0.7rem;
+    }
+    .website-call-us, .website-icon{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .website-details{
+        padding: 0 5px;
+        border: none;
+    }
+    .nav-top{
+        padding: 5px;
+    }
+    .banner-promo{
+        font-size: 0.5rem;
+    }
+    .logo h2 a {
+        margin: 5px 0;
+    }
+    .logo h2 {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav-message{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width: 427px) {
+    .nav-message{
+        display: none;
+    }
+}

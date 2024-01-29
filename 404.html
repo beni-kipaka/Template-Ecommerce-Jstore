@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jstore - E-Commerce template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="banner-promo-container tc">
+
+            <div class="container">
+                <div class="banner-promo py-15">
+                    Get Up to 40% New-Season Style
+                    <span class="men">Men</span>
+                    <span class="men">Women</span>
+                    * Limited time only
+                </div>
+            </div>
+
+        </div>
+        <div class="nav-top-container">
+            <div class="container">
+                <div class="nav-top flex jcsb gap-10 py-15">
+                    <div class="nav-message">fREE RETURN. STANDARD SHIPPING ORDER *99+</div>
+                    <div class="nav-items">
+                        <ul class="flex jcc gap-20">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-10">
+                        <div class="nav-country">
+                            <select name="country" id="country">
+                                <option value="france">FRA</option>
+                                <option value="usa">USA</option>
+                                <option value="rus">RUS</option>
+                            </select>
+                        </div>
+                        <div class="nav-currency">
+                            <select name="currency" id="currency">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="OXF">OXF</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="nav-social-icon flex gap-20">
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="website-details-container box">
+            <div class="container">
+                <div class="website-details flex aic gap-10">
+                    <i class="fa-solid fa-bars none" id="toggleMobileNav"  data-mobile="mobile-nav"></i>
+                    <div class="website-logo logo">
+                        <h2>
+                            <a href="/">Jstore</a>
+                        </h2>
+                    </div>
+                    <div class="website-search-bar flex-1 flex">
+                        <input type="search" name="product_filter" id="product_filter" class="flex-1 px-20"
+                            placeholder="Search ..." />
+                        <select name="categories" id="categories">
+                            <option value="">All Categories</option>
+                            <option value="">Robes</option>
+                            <option value="">Jupes</option>
+                            <option value="">Culottes</option>
+                            <option value="">T-Shirt</option>
+                            <option value="">Chemise</option>
+                        </select>
+                        <div class="serach-icon flex aic jcc">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                    <div class="website-call-us flex aic gap-10">
+                        <div class="call-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="call-message">
+                            <h3>Call Us</h3>
+                            <a href="tel:+123456789">+123456789</a>
+                        </div>
+                    </div>
+                    <div class="website-icon flex gap-10">
+                        <div class="website-icon-item">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="website-icon-item">
+                            <i class="bi bi-bag-heart"></i>
+                        </div>
+                        <div class="website-icon-item">
+                            <i class="bi bi-cart"></i>
+                        </div>
+                        <div class="website-icon-item" >
+                            <i class="fa-solid fa-angle-left" id="openCart" data-mobile="mobile-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="nav-container flex jcsb">
+                <div class="nav-left">
+                    <ul class="flex gap-10">
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li class="relative">
+                            <a href="#">CATEGORIES <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="mega-sub-nav absolute flex box">
+                                <div class="mega-item">
+                                    <h3>Variation 1</h3>
+                                    <ul>
+                                        <li><a href="#">Fullwidth Banner</a></li>
+                                        <li><a href="#">Boxed Slider Banner</a></li>
+                                        <li><a href="#">Boxed Image Banner</a></li>
+                                        <li><a href="#">Left Sidebar</a></li>
+                                        <li><a href="#">Right Sidebar</a></li>
+                                        <li><a href="#">Off Canvas Filter</a></li>
+                                        <li><a href="#">Horizontal Filter1</a></li>
+                                        <li><a href="#">Horizontal Filter2</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-item">
+                                    <h3>Variation 2</h3>
+                                    <ul>
+                                        <li><a href="#">List Types</a></li>
+                                        <li><a href="#">Ajax Infinite Scroll</a></li>
+                                        <li><a href="#">3 Columns Products</a></li>
+                                        <li><a href="#">4 Columns Products</a></li>
+                                        <li><a href="#">5 Columns Products</a></li>
+                                        <li><a href="#">6 Columns Products</a></li>
+                                        <li><a href="#">7 Columns Products</a></li>
+                                        <li><a href="#">8 Columns Products</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-item relative">
+                                    <img src="assets/images/banner/menu-banner-2.png" alt="">
+                                    <div class="mega-item-content absolute">
+                                        <span>OFF</span>
+                                        <div>
+                                            <h4>UP TO</h4>
+                                            <h3>50%</h3>
+                                        </div>
+                                    </div>
+                                    <button class="btn absolute">SHOP NOW</button>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <a href="#">PRODUCTS <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="mega-sub-nav absolute flex box">
+                                <div class="mega-item">
+                                    <h3>PRODUCT PAGES</h3>
+                                    <ul>
+                                        <li><a href="#">SIMPLE PRODUCT</a></li>
+                                        <li><a href="#">VARIABLE PRODUCT</a></li>
+                                        <li><a href="#">SALE PRODUCT</a></li>
+                                        <li><a href="#">FEATURED &amp; ON SALE</a></li>
+                                        <li><a href="#">WITH CUSTOM TAB</a></li>
+                                        <li><a href="#">WITH LEFT SIDEBAR</a></li>
+                                        <li><a href="#">WITH RIGHT SIDEBAR</a></li>
+                                        <li><a href="#">ADD CART STICKY</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-item">
+                                    <h3>PRODUCT LAYOUTS</h3>
+                                    <ul>
+                                        <li><a href="#">EXTENDED LAYOUT</a></li>
+                                        <li><a href="#">GRID IMAGE</a></li>
+                                        <li><a href="#">FULL WIDTH LAYOUT</a></li>
+                                        <li><a href="#">STICKY INFO</a></li>
+                                        <li><a href="#">LEFT &amp; RIGHT STICKY</a></li>
+                                        <li><a href="#">TRANSPARENT IMAGE</a></li>
+                                        <li><a href="#">CENTER VERTICAL</a></li>
+                                        <li><a href="#">BUILD YOUR OWN</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-item relative">
+                                    <img src="assets/images/banner/menu-banner-1.png" alt="">
+                                    <div class="mega-item-content absolute">
+                                        <span>OFF</span>
+                                        <div>
+                                            <h4>UP TO</h4>
+                                            <h3>50%</h3>
+                                        </div>
+                                    </div>
+                                    <button class="btn absolute">SHOP NOW</button>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <a href="#">PAGES <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="sub-nav absolute box none">
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Shopping cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">DashBoard</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li class="relative">
+                                    <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="sub-nav absolute box none">
+                                        <li><a href="#">Blog </a></li>
+                                        <li><a href="#">Blog Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Forgot Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul class="flex gap-10">
+                        <li><a href="#">special offer!</a></li>
+                        <li><a href="#">Buy PORTO !</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile mobile-nav mobile-left none">
+        <div class="overlay"></div>
+        <div class="mobile-content fixed">
+            <div class="mobile-content-header relative">
+                <div class="mobile-title">
+                    <h2>
+                        <a href="/">Jstore</a>
+                    </h2>
+                </div>
+                <div class="mobile-close absolute" data-mobile="mobile-nav">
+                    <img src="/assets/images/icons/close.png" data-mobile="mobile-nav" alt="">
+                </div>
+            </div>
+            <div class="mobile-content-body">
+                <ul>
+                    <li class="mobile-nav-item"><a href="#">Home</a></li>
+                    <li class="mobile-nav-item"><a href="#">Categories</a></li>
+                    <li class="mobile-nav-item active"><a href="#">Products</a></li>
+                    <li class="mobile-nav-item"><a href="#">PAGES</a></li>
+                    <li class="mobile-nav-item"><a href="#">BLOG</a></li>
+                    <li class="mobile-nav-item"><a href="#">ELEMENTS</a></li>
+                    <li class="mobile-nav-item"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="mobile-content-footer"></div>
+        </div>
+    </div>
+    <div class="mobile mobile-cart cart mobile-right none">
+        <div class="overlay"></div>
+        <div class="mobile-content fixed">
+            <div class="mobile-content-header relative">
+                <div class="mobile-title">
+                    <h2>Shopping Cart</h2>
+                </div>
+                <div class="mobile-close absolute" data-mobile="mobile-cart">
+                    <img src="/assets/images/icons/close.png" data-mobile="mobile-cart" alt="">
+                </div>
+            </div>
+            <div class="mobile-content-body py-10 px-10">
+                <ul class="cart-product-items">
+                    <li class="cart-product-item flex px-5 py-5 box">
+                        <div class="product-details flex-1 flex column gap-5 jcc">
+                            <div class="product-name">Pantalon supreme pour femme d'afaire</div>
+                            <div class="product-quantity-and-price">2 x 99.99€</div>
+                        </div>
+                        <div class="product-image relative">
+                            <img src="assets/images/product/featured/1.webp" alt="">
+                            <div class="remove-product absolute">
+                                <img src="assets/images/icons/close.png" class="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-product-item flex px-5 py-5 box">
+                        <div class="product-details flex-1 flex column gap-5 jcc">
+                            <div class="product-name">Pantalon supreme pour femme d'afaire</div>
+                            <div class="product-quantity-and-price">2 x 99.99€</div>
+                        </div>
+                        <div class="product-image relative">
+                            <img src="assets/images/product/featured/2.webp" alt="">
+                            <div class="remove-product absolute">
+                                <img src="assets/images/icons/close.png" class="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-product-item flex px-5 py-5 box">
+                        <div class="product-details flex-1 flex column gap-5 jcc">
+                            <div class="product-name">Pantalon supreme pour femme d'afaire</div>
+                            <div class="product-quantity-and-price">2 x 99.99€</div>
+                        </div>
+                        <div class="product-image relative">
+                            <img src="assets/images/product/featured/3.webp" alt="">
+                            <div class="remove-product absolute">
+                                <img src="assets/images/icons/close.png" class="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-product-item flex px-5 py-5 box">
+                        <div class="product-details flex-1 flex column gap-5 jcc">
+                            <div class="product-name">Pantalon supreme pour femme d'afaire</div>
+                            <div class="product-quantity-and-price">2 x 99.99€</div>
+                        </div>
+                        <div class="product-image relative">
+                            <img src="assets/images/product/featured/4.webp" alt="">
+                            <div class="remove-product absolute">
+                                <img src="assets/images/icons/close.png" class="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-product-item flex px-5 py-5 box">
+                        <div class="product-details flex-1 flex column gap-5 jcc">
+                            <div class="product-name">Pantalon supreme pour femme d'afaire</div>
+                            <div class="product-quantity-and-price">2 x 99.99€</div>
+                        </div>
+                        <div class="product-image relative">
+                            <img src="assets/images/product/featured/1.webp" alt="">
+                            <div class="remove-product absolute">
+                                <img src="assets/images/icons/close.png" class="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-content-footer">
+                <button class="view-cart btn">View Cart</button>
+                <button class="checkout btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="container c-404">
+        <h2>404</h2>
+        <p>Page non retrouvée</p>
+   </div>
+
+    <footer class="py-50">
+        <div class="container">
+            <div class="footer-content flex jcsb wrap pb-30">
+                <div class="footer-list">
+                    <h2>Contact Infos</h2>
+                    <div class="footer-item">
+                        <h4>Adresse :</h4>
+                        <p>123 Street Name, City, E,gland</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>Phone :</h4>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>Email :</h4>
+                        <p> mail@example.com</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>Working DAYS/Hours :</h4>
+                        <p> Mon - Sun / 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <h2>CUSTOMERS SERVICE</h2>
+                   <ul>
+                    <li class="customer-service-item"><a href="">Help & FAQs</a></li>
+                    <li class="customer-service-item"><a href="">Order Tracking</a></li>
+                    <li class="customer-service-item"><a href="">Shipping & Delivery</a></li>
+                    <li class="customer-service-item"><a href="">Orders History</a></li>
+                    <li class="customer-service-item"><a href="">Advanced Search</a></li>
+                    <li class="customer-service-item"><a href="">My Account</a></li>
+                    <li class="customer-service-item"><a href="">Careers</a></li>
+                    <li class="customer-service-item"><a href="">About Us</a></li>
+                    <li class="customer-service-item"><a href="">Corporate Sales</a></li>
+                    <li class="customer-service-item"><a href="">Privacy</a></li>
+                   </ul>
+                </div>
+                <div class="footer-list">
+                    <h2>POPULAR TAGS</h2>
+                    <div class="footer-tags">
+                        <div class="tags">bags</div>
+                        <div class="tags">black</div>
+                        <div class="tags">blue</div>
+                        <div class="tags">clothes</div>
+                        <div class="tags">Fashion</div>
+                        <div class="tags">Hub</div>
+                        <div class="tags">Shirt</div>
+                        <div class="tags">Shoes</div>
+                        <div class="tags">Skirt</div>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <h2>SUBSCRIBE NEWSLETTER</h2>
+                   <div class="footer-subscribe">
+                       <p>
+                        Get all the latest information on events, sales and offers. Sign up for newsletter:
+                       </p>
+                       <div class="footer-input">
+                           <input type="email" name="email" id="email" placeholder="Email Adress">
+                        </div>
+                        <button class="btn">subscribe</button>
+                   </div>
+                </div>
+               
+            </div>
+            <div class="footer-bottom flex jcsb py-30 wrap gap-10">
+                <div class="footer-bottom-left">
+                    © Jstore eCommerce. 2022. All Rights Reserved
+                </div>
+                <div class="footer-bottom-right flex gap-10">
+                    <img src="assets/images/card/mastercard.svg" alt="">
+                    <img src="assets/images/card/cb.svg" alt="">
+                    <img src="assets/images/card/visa.svg" alt="">
+                    <img src="assets/images/card/oney.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

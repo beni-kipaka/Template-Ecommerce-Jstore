@@ -1,0 +1,65 @@
+i{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+i:hover{
+    color: var(--main-color);
+}
+.logo h2 a{
+    display: block;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin: 30px 0;
+}
+.banner-divider{
+    height: 200px;
+    background-image: url("../images/banner/banner-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divider{
+    border: 0.1px solid var(--main-color-gray);
+    margin: 20px 0;
+}
+.bg-gray{
+    background-color: #ccc;
+}
+
+.pages{
+    height: 200vh;
+}
+.overlay{
+    background: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: var(--z-index-overlay);
+    opacity: 0.8;
+}
+.btn{
+    
+    height: 40px;
+    border: none;
+    border-radius: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+  }

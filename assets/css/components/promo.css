@@ -1,0 +1,43 @@
+.promo-icon{
+   
+}
+.promo-icon i{
+    color: var(--main-color);
+    font-size: 2.2rem;
+}
+.promo-item{
+    min-width: 300px;
+}
+.promo-item .promo-details h3{
+    font-size: 0.9rem;
+}
+.promo-item .promo-header{
+    height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .promo-item{
+        min-width: auto;
+    }
+
+}
+@media screen and (max-width: 768px) {
+  
+ .promo-container{
+     flex-direction: column;
+     width: 90%;
+     margin: 0 auto;
+ }
+ .promo-item{
+     margin-bottom: 10px;
+ }
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 427px) {
+  
+}

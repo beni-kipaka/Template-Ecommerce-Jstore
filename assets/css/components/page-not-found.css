@@ -1,0 +1,14 @@
+.c-404{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c-404 h2{
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.c-404 p{
+    font-size: 1.2rem;
+}

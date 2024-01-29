@@ -1,0 +1,22 @@
+.partenaire-logo{
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+.partenaires{
+    width: 90%;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 427px) {
+  
+}

@@ -1,0 +1,5 @@
+:root{
+    --z-index-overlay: 998;
+    --z-index-nav-mobile: 999;
+    --z-index-nav: 999;
+}

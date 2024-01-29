@@ -1,0 +1,138 @@
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--main-color-white);
+    box-shadow: 2px 8px 12px -8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.nav-container{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-container ul li a{
+    display: block;
+    padding: 15px 10px;
+    border-top: 2px solid var(--main-color-white);
+    border-bottom: 2px solid var(--main-color-white);
+    height: 30px;
+    line-height: 30px;
+}
+.nav-container ul li a i{
+    float: right;
+    position: relative;
+    top: 8px;
+    font-size: 0.8rem;
+}
+.nav-container ul li a:hover{
+    color: var(--main-color);
+}
+.nav-container ul li a.active{
+    border-top: 2px solid var(--main-color);
+}
+.nav-container ul li a:hover{
+    border-top: 2px solid var(--main-color);
+}
+.nav-container  ul  li:hover  ul{
+    display: block ;
+}
+.nav-container  ul  li:hover  .mega-sub-nav{
+    display: flex;
+}
+
+/********************** SUB NAV ******************/
+.sub-nav{
+    background-color: var(--main-color-white);
+    white-space: nowrap;
+    min-width: 200px;
+}
+.sub-nav li a:hover{
+    background-color: var(--main-color);
+    color: var(--main-color-white) !important;
+}
+.sub-nav .sub-nav{
+    left: 100%;
+    top: 0;
+    display: none !important;
+}
+.sub-nav li:hover .sub-nav{
+    display: block !important;
+}
+/********************** MEGA SUB NAV ******************/
+.mega-sub-nav{
+    background-color: var(--main-color-white);
+    display: none;
+}
+.mega-sub-nav .mega-item{
+    min-width: 200px;
+    padding:20px 10px;
+    border-right: 0.1px solid var(--main-color-gray);
+}
+.mega-sub-nav .mega-item > h3{
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 1.0rem;
+    white-space: nowrap;
+}
+.mega-sub-nav .mega-item a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--main-color-gray);
+    border: none;
+    text-transform: uppercase;
+}
+.mega-sub-nav .mega-item a:hover{
+    border: none;
+}
+.mega-sub-nav .mega-item:nth-child(3){
+    border: none;
+}
+.mega-sub-nav .mega-item img{
+    width: 100%;
+    height: 100%;
+}
+.mega-sub-nav .mega-item .mega-item-content{
+    top: 20px;
+    right: 20px;
+}
+.mega-sub-nav .mega-item button{
+    bottom: 20px;
+    left: 20%;
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+.mega-sub-nav .mega-item .mega-item-content span{
+    font-size: 2rem;
+}
+.mega-sub-nav .mega-item .mega-item-content h4{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.mega-sub-nav .mega-item .mega-item-content h3{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .nav-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-left{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 427px) {
+  
+}
